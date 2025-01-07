@@ -2779,3 +2779,16 @@
     color: color-mix(in srgb, var(--default-color), transparent 60%);
     font-size: 14px;
   }
+
+  .quantity-wrapper {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .qty-input {
+    width: 50px;
+    text-align: center;
+  }
+  
