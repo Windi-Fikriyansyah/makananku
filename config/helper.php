@@ -147,71 +147,71 @@
 		return array($application_name, $author, $description, $keywords, $creator, $version, $title, $header, $footer, $address, $telephone, $facsimile, $email, $whatsapp, $website, $facebook, $instagram, $twitter, $youtube);
 	}
 
-	function session($sesi){
-		global $mysqli;
+	// function session($sesi){
+	// 	global $mysqli;
 
-		switch($sesi){
-			case 'all' :
-				if(!isset($_SESSION['is_admin'])){
-					// header('location: login.php#login');
-					echo '<script type="text/javascript">
-						sessionStorage.setItem("message", "login");
-						window.location.replace("./login");
-					</script>';
-					exit();
-				}
-			break;
+	// 	switch($sesi){
+	// 		case 'all' :
+	// 			if(!isset($_SESSION['is_admin'])){
+	// 				// header('location: login.php#login');
+	// 				echo '<script type="text/javascript">
+	// 					sessionStorage.setItem("message", "login");
+	// 					window.location.replace("./login");
+	// 				</script>';
+	// 				exit();
+	// 			}
+	// 		break;
 
-			case 'admin' :
-				if(!isset($_SESSION['is_admin'])){
-					// header('location: login.php#login');
-					echo '<script type="text/javascript">
-						sessionStorage.setItem("message", "login");
-						window.location.replace("./login");
-					</script>';
-					exit();
-				}elseif(isset($_SESSION['is_admin']) && $_SESSION['role'] != 'admin'){
-					// header("{$_SERVER['SERVER_PROTOCOL']} 403");
-					http_response_code(403);
-					include_once './resources/views/errors/403.php';
-					exit();
-				}
-			break;
+	// 		case 'admin' :
+	// 			if(!isset($_SESSION['is_admin'])){
+	// 				// header('location: login.php#login');
+	// 				echo '<script type="text/javascript">
+	// 					sessionStorage.setItem("message", "login");
+	// 					window.location.replace("./login");
+	// 				</script>';
+	// 				exit();
+	// 			}elseif(isset($_SESSION['is_admin']) && $_SESSION['role'] != 'admin'){
+	// 				// header("{$_SERVER['SERVER_PROTOCOL']} 403");
+	// 				http_response_code(403);
+	// 				include_once './resources/views/errors/403.php';
+	// 				exit();
+	// 			}
+	// 		break;
 
-			case 'login' :
-				if(isset($_COOKIE['id_admin']) && isset($_COOKIE['key_admin'])){
-					$id = $_COOKIE['id_admin'];
-					$key = $_COOKIE['key_admin'];
+	// 		case 'login' :
+	// 			if(isset($_COOKIE['id_admin']) && isset($_COOKIE['key_admin'])){
+	// 				$id = $_COOKIE['id_admin'];
+	// 				$key = $_COOKIE['key_admin'];
 
-					$sql = "SELECT * FROM users WHERE id = ?";
-					$stmt = $mysqli->prepare($sql);
-					$stmt->bind_param('i', $id);
-					$stmt->execute();
-					$data = $stmt->get_result()->fetch_assoc();
+	// 				$sql = "SELECT * FROM users WHERE id = ?";
+	// 				$stmt = $mysqli->prepare($sql);
+	// 				$stmt->bind_param('i', $id);
+	// 				$stmt->execute();
+	// 				$data = $stmt->get_result()->fetch_assoc();
 
-					if($key === hash('sha256', $data['email'])){
-						$_SESSION['is_admin'] = true;
-						$_SESSION['id'] = $data['id'];
-						$_SESSION['name'] = $data['name'];
-						$_SESSION['email'] = $data['email'];
-						$_SESSION['role'] = $data['role'];
-						$_SESSION['photo'] = $data['photo'];
-					}
-					$stmt->close();
-					$mysqli->close();
-				}
+	// 				if($key === hash('sha256', $data['email'])){
+	// 					$_SESSION['is_admin'] = true;
+	// 					$_SESSION['id'] = $data['id'];
+	// 					$_SESSION['name'] = $data['name'];
+	// 					$_SESSION['email'] = $data['email'];
+	// 					$_SESSION['role'] = $data['role'];
+	// 					$_SESSION['photo'] = $data['photo'];
+	// 				}
+	// 				$stmt->close();
+	// 				$mysqli->close();
+	// 			}
 
-				if(isset($_SESSION['is_admin'])){
-					// header('location: index.php#welcome-back');
-					echo '<script type="text/javascript">
-						sessionStorage.setItem("message", "welcome-back");
-						window.location.replace("./");
-					</script>';
-					exit();
-				}
-			break;
-		}
-	}
+	// 			if(isset($_SESSION['is_admin'])){
+	// 				// header('location: index.php#welcome-back');
+	// 				echo '<script type="text/javascript">
+	// 					sessionStorage.setItem("message", "welcome-back");
+	// 					window.location.replace("./");
+	// 				</script>';
+	// 				exit();
+	// 			}
+	// 		break;
+	// 	}
+	// }
 
 	function tanggal($format){
 		switch($format){

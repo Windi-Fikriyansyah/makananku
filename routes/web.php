@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', [
+        'title' => 'Beranda | Makananku',
+        'description' => 'Makananku - Platform makanan favorit Anda.',
+        'keywords' => 'makanan, kuliner, makanan favorit',
+    ]);
 });
 
 use App\Http\Controllers\MainController;
