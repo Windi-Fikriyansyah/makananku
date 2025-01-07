@@ -353,27 +353,35 @@
     alert(`${qty} x ${itemName} added to the cart!`);
     console.log(cart); // Debug: Display cart in the console
     updateCartDisplay();
+    saveCart(); // Save the cart to localStorage
   }
 
-  // Update cart display (this is where you would render cart items in the UI)
+  // Update cart display (render cart items in the UI)
   function updateCartDisplay() {
     const cartSection = document.getElementById('cart-items');
     cartSection.innerHTML = ''; // Clear the cart section
+
+    if (cart.length === 0) {
+      cartSection.innerHTML = '<p>Your cart is empty!</p>';
+      return;
+    }
 
     cart.forEach(item => {
       const cartItem = document.createElement('div');
       cartItem.className = 'cart-item';
       cartItem.innerHTML = `
-        <p>${item.name} x ${item.quantity} = Rp${item.price * item.quantity}</p>
+        <p>${item.name} x ${item.quantity} = Rp${(item.price * item.quantity).toLocaleString()}</p>
       `;
       cartSection.appendChild(cartItem);
     });
   }
 
+  // Save the cart to localStorage
   function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
+  // Load the cart from localStorage
   function loadCart() {
     const savedCart = localStorage.getItem('cart');
     if (savedCart) {
@@ -382,21 +390,23 @@
     }
   }
 
-// Load cart data on page load
-window.onload = loadCart;
+  // Add hover effects to the cart section
+  window.onload = () => {
+    loadCart(); // Load cart data on page load
 
-const cart = document.getElementById('cart');
+    const cartSection = document.getElementById('cart');
+    if (cartSection) {
+      // Set default opacity
+      cartSection.style.opacity = "0.5";
 
-// Set default opacity
-cart.style.opacity = "0.5";
+      // Add hover effects
+      cartSection.addEventListener("mouseenter", () => {
+        cartSection.style.opacity = "1";
+      });
 
-// Add hover effects
-cart.addEventListener("mouseenter", () => {
-  cart.style.opacity = "1";
-});
-
-cart.addEventListener("mouseleave", () => {
-  cart.style.opacity = "0.5";
-});
-
+      cartSection.addEventListener("mouseleave", () => {
+        cartSection.style.opacity = "0.5";
+      });
+    }
+  };
 </script>
