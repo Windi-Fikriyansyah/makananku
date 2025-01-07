@@ -11,27 +11,18 @@ class MainController extends Controller
         return view('dashboard');
     }
     
-    public function cart() {
-        return view('cart');
+    public function saveCart(Request $request)
+    {
+        $cart = $request->input('cart'); // Retrieve the cart from the request
+        session(['cart' => $cart]); // Save it to the session
+
+        return response()->json(['success' => true]);
     }
-    
-    public function payment() {
-        return view('payment');
+
+    public function payment()
+    {
+        $cart = session('cart', []); // Retrieve cart from session, default to empty array if not set
+        return view('payment', compact('cart'));
     }
-    
-    public function submitPayment(Request $request) {
-        // Logika untuk memproses pembayaran (simulasi sementara)
-        $success = true; // Ganti dengan logika QRIS
-    
-        if ($success) {
-            return redirect()->route('orderNote')->with('message', 'Terimakasih sudah memesan, silahkan menunggu pesanan.');
-        } else {
-            return back()->with('error', 'Transaksi gagal, coba lagi.');
-        }
-    }
-    
-    public function orderNote() {
-        return view('orderNote');
-    }
-    
+        
 }

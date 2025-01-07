@@ -1297,6 +1297,8 @@
 
   .pricing .picture {
     max-width : 200px;
+    border-radius: 50px;
+
   }
   
   .pricing .price {

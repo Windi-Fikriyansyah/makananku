@@ -34,7 +34,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="" class="logo d-flex align-items-center me-auto">
+      <a href='{{ route("dashboard") }}' class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">MakananKu</h1>
@@ -42,7 +42,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href='{{ route("dashboard") }}' class="active">Home<br></a></li>
           <li><a href="#Food">Food</a></li>
           <li><a href="#Drink">Drink</a></li>
         </ul>
@@ -79,7 +79,7 @@
       <div id="cart-items">
         <p>No items yet...</p>
       </div>
-      <button id="payment-button" onclick="goToPaymentPage()" class="btn btn-primary">Proceed to Payment</button>
+      <button id="payment-button" onclick="saveCartAndProceed()" class="btn btn-primary">Proceed to Payment</button>
     </div>
 
     <!-- Pricing Section: Food -->
@@ -97,7 +97,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
         <div class="pricing-tem">
           <h3>Nasi Goreng Spesial</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/nasgor.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Nasi goreng dengan topping ayam suwir, telur mata sapi, sosis, dan kerupuk.</p>
           <!-- Quantity Input -->
@@ -112,7 +112,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
         <div class="pricing-tem">
           <h3>Mie Ayam Jamur</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/miayam.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Mie lembut dengan potongan ayam berbumbu dan saus jamur gurih.</p>
           <!-- Quantity Input -->
@@ -127,7 +127,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
         <div class="pricing-tem">
           <h3>Sate Ayam</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/sate.png" alt="">
           <div class="price1">Rp30.000</div>
           <p>Daging ayam empuk dengan bumbu kacang dan lontong.</p>
           <!-- Quantity Input -->
@@ -142,7 +142,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
         <div class="pricing-tem">
           <h3>Ayam Geprek Keju</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/ayam.png" alt="">
           <div class="price1">Rp28.000</div>
           <p>Ayam goreng crispy dengan sambal pedas dan parutan keju melimpah.</p>
           <!-- Quantity Input -->
@@ -157,7 +157,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
         <div class="pricing-tem">
           <h3>Pecel Lele</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/celele.png" alt="">
           <div class="price1">Rp22.000</div>
           <p>Lele goreng dengan sambal terasi, lalapan, dan nasi hangat.</p>
           <!-- Quantity Input -->
@@ -172,7 +172,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
         <div class="pricing-tem">
           <h3>Pizza Mini</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/mak/pizza.png" alt="">
           <div class="price1">Rp35.000</div>
           <p>Pizza ukuran kecil dengan topping keju, sosis, dan saus tomat.</p>
           <!-- Quantity Input -->
@@ -204,7 +204,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
         <div class="pricing-tem">
           <h3>Es Teh Manis</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/esteh.png" alt="">
           <div class="price1">Rp7.000</div>
           <p>Teh manis segar dengan es batu.</p>
           <!-- Quantity Input -->
@@ -219,7 +219,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
         <div class="pricing-tem">
           <h3>Es Kopi Susu Gula Aren</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/kopsugul.png" alt="">
           <div class="price1">Rp18.000</div>
           <p>Kopi susu dengan rasa manis alami dari gula aren.</p>
           <!-- Quantity Input -->
@@ -234,7 +234,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
         <div class="pricing-tem">
           <h3>Jus Alpukat</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/alpukat.png" alt="">
           <div class="price1">Rp15.000</div>
           <p>Jus alpukat segar dengan tambahan susu cokelat.</p>
           <!-- Quantity Input -->
@@ -249,7 +249,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
         <div class="pricing-tem">
           <h3>Lemon Tea</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/letea.png" alt="">
           <div class="price1">Rp10.000</div>
           <p>Minuman teh dengan campuran perasan lemon segar.</p>
           <!-- Quantity Input -->
@@ -264,7 +264,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
         <div class="pricing-tem">
           <h3>Matcha Latte</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/matcha.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Minuman berbahan dasar teh hijau dengan susu dan rasa creamy.</p>
           <!-- Quantity Input -->
@@ -279,7 +279,7 @@
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
         <div class="pricing-tem">
           <h3>Milkshake Cokelat</h3>
-          <img class="picture" src="assets/img/logo.png" alt="">
+          <img class="picture" src="assets/img/min/milcok.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Milkshake dengan rasa cokelat yang kaya dan topping whipped cream.</p>
           <!-- Quantity Input -->
@@ -432,11 +432,28 @@
     }
   }
 
-  // Redirect to the payment page
-  function goToPaymentPage() {
-    // Replace 'payment.html' with the actual payment page URL
-    window.location.href = '/payment';
-  }
+  function saveCartAndProceed() {
+        const cart = JSON.parse(localStorage.getItem('cart')); // Assume the cart is stored in localStorage
+        if (cart) {
+            fetch('{{ route("cart") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                body: JSON.stringify({ cart })
+            })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '{{ route("payment") }}'; // Redirect to payment page
+                    } else {
+                        alert('Failed to save cart data.');
+                    }
+                });
+        } else {
+            alert('Cart is empty!');
+        }
+    }
 
   // Run on page load
   window.onload = () => {
