@@ -2123,17 +2123,18 @@
     margin-right: 8px;
     color: var(--accent-color);
   }
-  
+
   /*--------------------------------------------------------------
   # Starter Section Section
   --------------------------------------------------------------*/
+/*   
   .starter-section {
-    /* Add your styles here */
+    # Add your styles here 
   }
-  
+   */
   /*--------------------------------------------------------------
   # Blog Posts Section
-  --------------------------------------------------------------*/
+  --------------------------------------------------------------*/ 
   .blog-posts article {
     background-color: var(--surface-color);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
