@@ -121,7 +121,7 @@
             <input type="number" id="qty-miajamur" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Mie Ayam Jamur', 25000, 'qty-miajamur')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Mie Ayam Jamur', 20000, 'qty-miajamur')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -136,7 +136,7 @@
             <input type="number" id="qty-sate-ayam" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Sate Ayam', 25000, 'qty-sate-ayam')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Sate Ayam', 30000, 'qty-sate-ayam')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -151,7 +151,7 @@
             <input type="number" id="qty-ayam-geprek-keju" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Ayam Geprek Keju', 25000, 'qty-ayam-geprek-keju')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Ayam Geprek Keju', 28000, 'qty-ayam-geprek-keju')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -166,7 +166,7 @@
             <input type="number" id="qty-pecel-lele" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Pecel Lele', 25000, 'qty-pecel-lele')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Pecel Lele', 22000, 'qty-pecel-lele')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
@@ -181,7 +181,7 @@
             <input type="number" id="qty-pizza-mini" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Pizza Mini', 25000, 'qty-pizza-mini')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Pizza Mini', 35000, 'qty-pizza-mini')">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -213,7 +213,7 @@
             <input type="number" id="qty-es-teh" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Es Teh Manis', 25000, 'qty-es-teh')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Es Teh Manis', 7000, 'qty-es-teh')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -228,14 +228,14 @@
             <input type="number" id="qty-kopi-susu-aren" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Es Kopi Susu Gula Aren', 25000, 'qty-kopi-susu-aren')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Es Kopi Susu Gula Aren', 18000, 'qty-kopi-susu-aren')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
         <div class="pricing-tem">
           <h3>Jus Alpukat</h3>
-          <div class="price1">Rp15.000</div>
           <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp15.000</div>
           <p>Jus alpukat segar dengan tambahan susu cokelat.</p>
           <!-- Quantity Input -->
           <div class="quantity-wrapper">
@@ -243,7 +243,7 @@
             <input type="number" id="qty-jus-alpukat" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Jus Alpukat', 25000, 'qty-jus-alpukat')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Jus Alpukat', 15000, 'qty-jus-alpukat')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -258,7 +258,7 @@
             <input type="number" id="qty-lemon-tea" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Lemon Tea', 25000, 'qty-lemon-tea')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Lemon Tea', 10000, 'qty-lemon-tea')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -288,7 +288,7 @@
             <input type="number" id="qty-milkshake-coklat" class="qty-input" value="1" min="1">
           </div>
           <!-- Add to Cart Button -->
-          <button class="btn-buy" onclick="addToCart('Milkshake Coklat', 25000, 'qty-milkshake-coklat')">Add to Cart</button>
+          <button class="btn-buy" onclick="addToCart('Milkshake Coklat', 20000, 'qty-milkshake-coklat')">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -359,6 +359,24 @@
     updateCartDisplay(); // Refresh UI
   }
 
+  // Subtract item from cart
+  function subtractFromCart(itemName) {
+    const existingItem = cart.find(item => item.name === itemName);
+
+    if (existingItem) {
+      if (existingItem.quantity > 1) {
+        // Decrease quantity by 1
+        existingItem.quantity -= 1;
+      } else {
+        // Remove item if quantity is 1
+        cart = cart.filter(item => item.name !== itemName);
+      }
+
+      saveCart(); // Save the updated cart to localStorage
+      updateCartDisplay(); // Refresh UI
+    }
+  }
+
   // Update cart display (render items in UI)
   function updateCartDisplay() {
     const cartSection = document.getElementById('cart-items');
@@ -373,7 +391,10 @@
       const cartItem = document.createElement('div');
       cartItem.className = 'cart-item';
       cartItem.innerHTML = `
-        <p>${item.name} x ${item.quantity} = Rp${(item.price * item.quantity).toLocaleString()}</p>
+        <p>
+          ${item.name} x ${item.quantity} = Rp${(item.price * item.quantity).toLocaleString()}
+          <button onclick="subtractFromCart('${item.name}')" class="btn btn-sm btn-danger" style="margin-left: 10px;">-</button>
+        </p>
       `;
       cartSection.appendChild(cartItem);
     });
@@ -409,6 +430,12 @@
         cartSection.style.opacity = "0.5";
       });
     }
+  }
+
+  // Redirect to the payment page
+  function goToPaymentPage() {
+    // Replace 'payment.html' with the actual payment page URL
+    window.location.href = '/payment';
   }
 
   // Run on page load
