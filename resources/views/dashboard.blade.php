@@ -74,6 +74,11 @@
 
     </section><!-- /Hero Section -->
 
+    <div id="cart" class="cart">
+      <h3>Your Cart</h3>
+      <p>No items yet...</p>
+    </div>
+
     <!-- Pricing Section: Food -->
 <section id="Food" class="pricing section">
   <!-- Section Title -->
@@ -92,7 +97,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Nasi goreng dengan topping ayam suwir, telur mata sapi, sosis, dan kerupuk.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-nasi-goreng">Qty:</label>
+            <input type="number" id="qty-nasi-goreng" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Nasi Goreng Spesial', 25000, 'qty-nasi-goreng')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -101,7 +112,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Mie lembut dengan potongan ayam berbumbu dan saus jamur gurih.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-miajamur">Qty:</label>
+            <input type="number" id="qty-miajamur" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Mie Ayam Jamur', 25000, 'qty-miajamur')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -110,7 +127,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp30.000</div>
           <p>Daging ayam empuk dengan bumbu kacang dan lontong.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-sate-ayam">Qty:</label>
+            <input type="number" id="qty-sate-ayam" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Sate Ayam', 25000, 'qty-sate-ayam')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -119,7 +142,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp28.000</div>
           <p>Ayam goreng crispy dengan sambal pedas dan parutan keju melimpah.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-ayam-geprek-keju">Qty:</label>
+            <input type="number" id="qty-ayam-geprek-keju" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Ayam Geprek Keju', 25000, 'qty-ayam-geprek-keju')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -128,7 +157,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp22.000</div>
           <p>Lele goreng dengan sambal terasi, lalapan, dan nasi hangat.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-pecel-lele">Qty:</label>
+            <input type="number" id="qty-pecel-lele" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Pecel Lele', 25000, 'qty-pecel-lele')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
@@ -137,7 +172,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp35.000</div>
           <p>Pizza ukuran kecil dengan topping keju, sosis, dan saus tomat.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-pizza-mini">Qty:</label>
+            <input type="number" id="qty-pizza-mini" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Pizza Mini', 25000, 'qty-pizza-mini')">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -163,7 +204,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp7.000</div>
           <p>Teh manis segar dengan es batu.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-es-teh">Qty:</label>
+            <input type="number" id="qty-es-teh" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Es Teh Manis', 25000, 'qty-es-teh')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -172,7 +219,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp18.000</div>
           <p>Kopi susu dengan rasa manis alami dari gula aren.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-kopi-susu-aren">Qty:</label>
+            <input type="number" id="qty-kopi-susu-aren" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Es Kopi Susu Gula Aren', 25000, 'qty-kopi-susu-aren')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -181,7 +234,13 @@
           <div class="price1">Rp15.000</div>
           <img class="picture" src="assets/img/logo.png" alt="">
           <p>Jus alpukat segar dengan tambahan susu cokelat.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-jus-alpukat">Qty:</label>
+            <input type="number" id="qty-jus-alpukat" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Jus Alpukat', 25000, 'qty-jus-alpukat')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -190,7 +249,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp10.000</div>
           <p>Minuman teh dengan campuran perasan lemon segar.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-lemon-tea">Qty:</label>
+            <input type="number" id="qty-lemon-tea" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Lemon Tea', 25000, 'qty-lemon-tea')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -199,7 +264,13 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Minuman berbahan dasar teh hijau dengan susu dan rasa creamy.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-matcha-latte">Qty:</label>
+            <input type="number" id="qty-matcha-latte" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Matcha Latte', 25000, 'qty-matcha-latte')">Add to Cart</button>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
@@ -208,14 +279,20 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Milkshake dengan rasa cokelat yang kaya dan topping whipped cream.</p>
-          <a href="#" class="btn-buy">Buy Now</a>
+          <!-- Quantity Input -->
+          <div class="quantity-wrapper">
+            <label for="qty-milkshake-coklat">Qty:</label>
+            <input type="number" id="qty-milkshake-coklat" class="qty-input" value="1" min="1">
+          </div>
+          <!-- Add to Cart Button -->
+          <button class="btn-buy" onclick="addToCart('Milkshake Coklat', 25000, 'qty-milkshake-coklat')">Add to Cart</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End Pricing Section: Drink -->
- 
+
   <footer id="footer" class="footer">
 
     <div class="container copyright text-center mt-4">
@@ -250,3 +327,76 @@
 </body>
 
 </html>
+
+<script>
+  const cart = []; // To store cart items
+
+  function addToCart(itemName, itemPrice, qtyInputId) {
+    // Get the quantity
+    const qty = parseInt(document.getElementById(qtyInputId).value);
+    if (qty <= 0 || isNaN(qty)) {
+      alert('Please enter a valid quantity');
+      return;
+    }
+
+    // Check if the item already exists in the cart
+    const existingItem = cart.find(item => item.name === itemName);
+
+    if (existingItem) {
+      // Update quantity if item already exists
+      existingItem.quantity += qty;
+    } else {
+      // Add new item to the cart
+      cart.push({ name: itemName, price: itemPrice, quantity: qty });
+    }
+
+    alert(`${qty} x ${itemName} added to the cart!`);
+    console.log(cart); // Debug: Display cart in the console
+    updateCartDisplay();
+  }
+
+  // Update cart display (this is where you would render cart items in the UI)
+  function updateCartDisplay() {
+    const cartSection = document.getElementById('cart-items');
+    cartSection.innerHTML = ''; // Clear the cart section
+
+    cart.forEach(item => {
+      const cartItem = document.createElement('div');
+      cartItem.className = 'cart-item';
+      cartItem.innerHTML = `
+        <p>${item.name} x ${item.quantity} = Rp${item.price * item.quantity}</p>
+      `;
+      cartSection.appendChild(cartItem);
+    });
+  }
+
+  function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  function loadCart() {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+      cart.push(...JSON.parse(savedCart));
+      updateCartDisplay();
+    }
+  }
+
+// Load cart data on page load
+window.onload = loadCart;
+
+const cart = document.getElementById('cart');
+
+// Set default opacity
+cart.style.opacity = "0.5";
+
+// Add hover effects
+cart.addEventListener("mouseenter", () => {
+  cart.style.opacity = "1";
+});
+
+cart.addEventListener("mouseleave", () => {
+  cart.style.opacity = "0.5";
+});
+
+</script>

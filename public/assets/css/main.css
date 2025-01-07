@@ -1385,7 +1385,21 @@
     background: var(--accent-color);
     color: var(--contrast-color);
   }
-  
+
+  .pricing .quantity-wrapper {
+    margin: 10px 0;
+    gap: 10px;
+    color: var(--accent-color);
+    }
+
+  .pricing .qty-input {
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    color: var(--accent-color);
+    font-family: var(--heading-font);
+    border: 1px solid var(--accent-color);
+  }
   /*--------------------------------------------------------------
   # Faq Section
   --------------------------------------------------------------*/
@@ -2780,15 +2794,30 @@
     font-size: 14px;
   }
 
-  .quantity-wrapper {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  /* Cart container */
+  .cart {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: rgba(255, 255, 255, 0.8); /* 80% visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 16px;
+    transition: background-color 0.7s, opacity 0.7s; /* Smooth transition */
+    z-index: 1000;
   }
   
-  .qty-input {
-    width: 50px;
-    text-align: center;
+  /* Hover effect */
+  .cart:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully visible */
+    opacity: 1; /* Optional: make sure it's fully visible */
+  }
+  
+  /* Optional: Make the cart semi-transparent when inactive */
+  .cart {
+    opacity: 0.1;
   }
   
