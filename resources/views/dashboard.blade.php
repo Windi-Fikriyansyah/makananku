@@ -76,7 +76,10 @@
 
     <div id="cart" class="cart">
       <h3>Your Cart</h3>
-      <p>No items yet...</p>
+      <div id="cart-items">
+        <p>No items yet...</p>
+      </div>
+      <button id="payment-button" onclick="goToPaymentPage()" class="btn btn-primary">Proceed to Payment</button>
     </div>
 
     <!-- Pricing Section: Food -->
@@ -329,11 +332,12 @@
 </html>
 
 <script>
-  const cart = []; // To store cart items
+  let cart = []; // Global cart array to store items
 
+  // Add item to cart
   function addToCart(itemName, itemPrice, qtyInputId) {
-    // Get the quantity
     const qty = parseInt(document.getElementById(qtyInputId).value);
+
     if (qty <= 0 || isNaN(qty)) {
       alert('Please enter a valid quantity');
       return;
@@ -351,18 +355,17 @@
     }
 
     alert(`${qty} x ${itemName} added to the cart!`);
-    console.log(cart); // Debug: Display cart in the console
-    updateCartDisplay();
-    saveCart(); // Save the cart to localStorage
+    saveCart(); // Save the updated cart to localStorage
+    updateCartDisplay(); // Refresh UI
   }
 
-  // Update cart display (render cart items in the UI)
+  // Update cart display (render items in UI)
   function updateCartDisplay() {
     const cartSection = document.getElementById('cart-items');
-    cartSection.innerHTML = ''; // Clear the cart section
+    cartSection.innerHTML = ''; // Clear existing content
 
     if (cart.length === 0) {
-      cartSection.innerHTML = '<p>Your cart is empty!</p>';
+      cartSection.innerHTML = '<p>No items yet</p>';
       return;
     }
 
@@ -376,24 +379,22 @@
     });
   }
 
-  // Save the cart to localStorage
+  // Save cart to localStorage
   function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
-  // Load the cart from localStorage
+  // Load cart from localStorage
   function loadCart() {
     const savedCart = localStorage.getItem('cart');
     if (savedCart) {
-      cart.push(...JSON.parse(savedCart));
-      updateCartDisplay();
+      cart = JSON.parse(savedCart); // Update the global cart array
+      updateCartDisplay(); // Refresh UI
     }
   }
 
-  // Add hover effects to the cart section
-  window.onload = () => {
-    loadCart(); // Load cart data on page load
-
+  // Initialize hover effects for cart section
+  function initCartHoverEffects() {
     const cartSection = document.getElementById('cart');
     if (cartSection) {
       // Set default opacity
@@ -408,5 +409,11 @@
         cartSection.style.opacity = "0.5";
       });
     }
+  }
+
+  // Run on page load
+  window.onload = () => {
+    loadCart(); // Load cart from localStorage
+    initCartHoverEffects(); // Initialize hover effects
   };
 </script>
