@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>MakananKu Main</title>
+  <title>MakananKu dashboard</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -34,7 +34,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">MakananKu</h1>
@@ -63,7 +63,7 @@
             <h1 data-aos="fade-up">MakananKu</h1>
             <p data-aos="fade-up" data-aos-delay="100">Kemudahan memesan makanan hanya dengan ujunga jari.</p>
             <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+              <a href="#Food" class="btn-get-started">Pesan Sekarang <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -74,8 +74,138 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Pricing Section -->
-    <section id="Food" class="pricing section">
+    <!-- Pricing Section: Food -->
+<section id="Food" class="pricing section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Food</h2>
+    <p>Makanan<br></p>
+  </div>
+  <!-- End Section Title -->
+   
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Makanan Items -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="pricing-tem">
+          <h3>Nasi Goreng Spesial</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp25.000</div>
+          <p>Nasi goreng dengan topping ayam suwir, telur mata sapi, sosis, dan kerupuk.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-tem">
+          <h3>Mie Ayam Jamur</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp20.000</div>
+          <p>Mie lembut dengan potongan ayam berbumbu dan saus jamur gurih.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="pricing-tem">
+          <h3>Sate Ayam</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp30.000</div>
+          <p>Daging ayam empuk dengan bumbu kacang dan lontong.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="pricing-tem">
+          <h3>Ayam Geprek Keju</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp28.000</div>
+          <p>Ayam goreng crispy dengan sambal pedas dan parutan keju melimpah.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="pricing-tem">
+          <h3>Pecel Lele</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp22.000</div>
+          <p>Lele goreng dengan sambal terasi, lalapan, dan nasi hangat.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="pricing-tem">
+          <h3>Pizza Mini</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp35.000</div>
+          <p>Pizza ukuran kecil dengan topping keju, sosis, dan saus tomat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Pricing Section: Food -->
+
+<!-- Pricing Section: Drink -->
+<section id="Drink" class="pricing section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Drink</h2>
+    <p>Minuman<br></p>
+  </div>
+  <!-- End Section Title -->
+  
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Minuman Items -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="pricing-tem">
+          <h3>Es Teh Manis</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp7.000</div>
+          <p>Teh manis segar dengan es batu.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-tem">
+          <h3>Es Kopi Susu Gula Aren</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp18.000</div>
+          <p>Kopi susu dengan rasa manis alami dari gula aren.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="pricing-tem">
+          <h3>Jus Alpukat</h3>
+          <div class="price1">Rp15.000</div>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <p>Jus alpukat segar dengan tambahan susu cokelat.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="pricing-tem">
+          <h3>Lemon Tea</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp10.000</div>
+          <p>Minuman teh dengan campuran perasan lemon segar.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="pricing-tem">
+          <h3>Matcha Latte</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp25.000</div>
+          <p>Minuman berbahan dasar teh hijau dengan susu dan rasa creamy.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="pricing-tem">
+          <h3>Milkshake Cokelat</h3>
+          <img class="picture" src="assets/img/logo.png" alt="">
+          <div class="price1">Rp20.000</div>
+          <p>Milkshake dengan rasa cokelat yang kaya dan topping whipped cream.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Pricing Section: Drink -->
+
+<!-- Pricing Section -->
+<section id="Food" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -108,10 +238,10 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-tem">
               <span class="featured">Featured</span>
-              <h3 style="color: #0dcaf0;">Starter Plan</h3>
+              <h3 style="color: #c3edbf;">Starter Plan</h3>
               <div class="price"><sup>$</sup>19<span> / mo</span></div>
               <div class="icon">
-                <i class="bi bi-send" style="color: #0dcaf0;"></i>
+                <i class="bi bi-send" style="color:rgb(26, 140, 36);"></i>
               </div>
               <ul>
                 <li>Aida dere</li>
@@ -200,10 +330,10 @@
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-tem">
               <span class="featured">Featured</span>
-              <h3 style="color: #0dcaf0;">Starter Plan</h3>
+              <h3 style="color: #c3edbf;">Starter Plan</h3>
               <div class="price"><sup>$</sup>19<span> / mo</span></div>
               <div class="icon">
-                <i class="bi bi-send" style="color: #0dcaf0;"></i>
+                <i class="bi bi-send" style="color: #c3edbf;"></i>
               </div>
               <ul>
                 <li>Aida dere</li>
@@ -259,54 +389,6 @@
     </section><!-- /Pricing Section -->
 
   <footer id="footer" class="footer">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">FlexStart</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">MakananKu</strong> <span>All Rights Reserved</span></p>
