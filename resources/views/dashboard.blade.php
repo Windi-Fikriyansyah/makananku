@@ -82,7 +82,7 @@
     <p>Makanan<br></p>
   </div>
   <!-- End Section Title -->
-   
+
   <div class="container">
     <div class="row gy-4">
       <!-- Makanan Items -->
@@ -92,6 +92,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Nasi goreng dengan topping ayam suwir, telur mata sapi, sosis, dan kerupuk.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -100,6 +101,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Mie lembut dengan potongan ayam berbumbu dan saus jamur gurih.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -108,6 +110,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp30.000</div>
           <p>Daging ayam empuk dengan bumbu kacang dan lontong.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -116,6 +119,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp28.000</div>
           <p>Ayam goreng crispy dengan sambal pedas dan parutan keju melimpah.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -124,6 +128,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp22.000</div>
           <p>Lele goreng dengan sambal terasi, lalapan, dan nasi hangat.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
@@ -132,6 +137,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp35.000</div>
           <p>Pizza ukuran kecil dengan topping keju, sosis, dan saus tomat.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
     </div>
@@ -157,6 +163,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp7.000</div>
           <p>Teh manis segar dengan es batu.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
@@ -165,6 +172,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp18.000</div>
           <p>Kopi susu dengan rasa manis alami dari gula aren.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
@@ -173,6 +181,7 @@
           <div class="price1">Rp15.000</div>
           <img class="picture" src="assets/img/logo.png" alt="">
           <p>Jus alpukat segar dengan tambahan susu cokelat.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
@@ -181,6 +190,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp10.000</div>
           <p>Minuman teh dengan campuran perasan lemon segar.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
@@ -189,6 +199,7 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp25.000</div>
           <p>Minuman berbahan dasar teh hijau dengan susu dan rasa creamy.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
@@ -197,197 +208,14 @@
           <img class="picture" src="assets/img/logo.png" alt="">
           <div class="price1">Rp20.000</div>
           <p>Milkshake dengan rasa cokelat yang kaya dan topping whipped cream.</p>
+          <a href="#" class="btn-buy">Buy Now</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End Pricing Section: Drink -->
-
-<!-- Pricing Section -->
-<section id="Food" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Food</h2>
-        <p>Makanan<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-tem">
-              <h3 style="color: #20c997;">Free Plan</h3>
-              <div class="price"><sup>$</sup>0<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-box" style="color: #20c997;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-tem">
-              <span class="featured">Featured</span>
-              <h3 style="color: #c3edbf;">Starter Plan</h3>
-              <div class="price"><sup>$</sup>19<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-send" style="color:rgb(26, 140, 36);"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-tem">
-              <h3 style="color: #fd7e14;">Business Plan</h3>
-              <div class="price"><sup>$</sup>29<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-airplane" style="color: #fd7e14;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pricing-tem">
-              <h3 style="color: #0d6efd;">Ultimate Plan</h3>
-              <div class="price"><sup>$</sup>49<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-rocket" style="color: #0d6efd;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div><!-- End pricing row -->
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Pricing Section -->
-    <section id="Drink" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Drink</h2>
-        <p>Minuman<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-tem">
-              <h3 style="color: #20c997;">Free Plan</h3>
-              <div class="price"><sup>$</sup>0<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-box" style="color: #20c997;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-tem">
-              <span class="featured">Featured</span>
-              <h3 style="color: #c3edbf;">Starter Plan</h3>
-              <div class="price"><sup>$</sup>19<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-send" style="color: #c3edbf;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-tem">
-              <h3 style="color: #fd7e14;">Business Plan</h3>
-              <div class="price"><sup>$</sup>29<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-airplane" style="color: #fd7e14;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pricing-tem">
-              <h3 style="color: #0d6efd;">Ultimate Plan</h3>
-              <div class="price"><sup>$</sup>49<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-rocket" style="color: #0d6efd;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div><!-- End pricing row -->
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
+ 
   <footer id="footer" class="footer">
 
     <div class="container copyright text-center mt-4">
